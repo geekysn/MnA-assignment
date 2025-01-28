@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --nav: #333333;
+    --bg: #FCFAF4;
+  }
+
+  html {
+    @apply text-[14px] md:text-[15px] lg:text-[0.9vw];
+  }
+}
+
+@layer components {
+  .button {
+    @apply relative inline-flex items-center justify-center px-6 py-3 text-base font-medium rounded-full transition-all duration-200;
+  }
+
+  .button-bg-wrapper {
+    @apply absolute inset-0 overflow-hidden rounded-full;
+  }
+
+  .button-bg {
+    @apply absolute top-1/2 left-1/2 w-full h-full bg-black transform -translate-x-1/2 -translate-y-1/2 transition-transform duration-300;
+  }
+
+  .nav-link {
+    @apply text-lg font-medium hover:text-gray-600 transition-colors duration-200;
+  }
+
+  .menu-bar {
+    @apply w-6 h-0.5 bg-current transition-all duration-300;
+  }
+}
