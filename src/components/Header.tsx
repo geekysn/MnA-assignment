@@ -13,7 +13,7 @@ export const Header = () => {
               <img 
                 src="https://cdn.prod.website-files.com/65240dac30f703b7a711b7c2/667463d01a10a9f3654e3f47_Logo.svg"
                 alt="Givingli Logo"
-                className="w-[200px] md:w-[300px] h-auto"
+                className="w-[110px] md:w-[150px] h-auto"
               />
             </Link>
 
